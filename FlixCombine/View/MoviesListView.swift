@@ -21,7 +21,8 @@ struct MoviesListView: View {
             List {
                 Section(header: Text("Now Playing")) {
                     ForEach(self.model.movies) { movie in
-                        Text(movie.title)
+                        MovieRow(title: movie.title,
+                                 overview: movie.overview)
                     }
                 }
             }
