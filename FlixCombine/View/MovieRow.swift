@@ -25,11 +25,11 @@ struct MovieRow: View {
             VStack(alignment: .leading) {
                 Text(title)
                     .font(.title)
-                .lineLimit(2)
+                    .lineLimit(2)
                     .minimumScaleFactor(0.6)
                 Text(overview)
                     .font(.caption)
-                .lineLimit(4)
+                    .lineLimit(4)
             }
         }
     }
