@@ -16,22 +16,20 @@ class MoviesListViewModel: ObservableObject {
     @Published var movies = [Movie]()
     @Published var error: API.Error? = nil
 
+    /// Fetches movies from the specified endpoint.
+    /// - Parameter endpoint: The `Endpoint` to fetch from in the request.
     func getMovies(_ endpoint: API.EndPoint) {
         api.getMovies(endpoint)
         .receive(on: DispatchQueue.main)
+        .print("🐞 DEBUG")
         .sink(receiveCompletion: { completion in
-            switch completion {
-            case .finished:
-                print("🏁 Recieved finish completion from getMovies")
-            case .failure(let error):
+            if case .failure(let error) = completion {
                 print("⛔️ Error recieved from getMovies: \(error.errorDescription ?? "Unknown")")
                 self.error = error
             }
         }) { movieResponse in
             self.movies = movieResponse.results
-            for movie in movieResponse.results {
-                print(movie.title)
-            }
-        }.store(in: &subscriptions)
+        }
+        .store(in: &subscriptions)
     }
 }

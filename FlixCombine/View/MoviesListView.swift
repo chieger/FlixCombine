@@ -17,19 +17,20 @@ struct MoviesListView: View {
 
     var body: some View {
 
-        return NavigationView {
+        NavigationView {
             List {
-                Section(header: Text("Movies")) {
+                Section(header: Text("Now Playing")) {
                     ForEach(self.model.movies) { movie in
                         Text(movie.title)
                     }
                 }
             }
+            .navigationBarTitle("Movies")
         }
     }
 }
 
-#if DEBUG // ❓ Do we always want to wrap preview in DEBUG?
+#if DEBUG
 struct MoviesListView_Previews: PreviewProvider {
     static var previews: some View {
         MoviesListView(model: MoviesListViewModel())

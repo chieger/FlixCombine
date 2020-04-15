@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.makeKeyAndVisible()
 
             // Kick off the first network request to get popular movies
-            viewModel.getMovies(.popular)
+            viewModel.getMovies(.nowPlaying)
         }
     }
 
