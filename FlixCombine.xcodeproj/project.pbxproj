@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		EDE0623B244630FC000EDEB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0623A244630FC000EDEB6 /* AppDelegate.swift */; };
 		EDE0623D244630FC000EDEB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0623C244630FC000EDEB6 /* SceneDelegate.swift */; };
-		EDE0623F244630FC000EDEB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0623E244630FC000EDEB6 /* ContentView.swift */; };
 		EDE0624124463103000EDEB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE0624024463103000EDEB6 /* Assets.xcassets */; };
 		EDE0624424463103000EDEB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE0624324463103000EDEB6 /* Preview Assets.xcassets */; };
 		EDE0624724463103000EDEB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE0624524463103000EDEB6 /* LaunchScreen.storyboard */; };
+		EDE0624F2446443C000EDEB6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0624E2446443C000EDEB6 /* API.swift */; };
+		EDE0625424468B06000EDEB6 /* MoviesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0625324468B06000EDEB6 /* MoviesListView.swift */; };
+		EDE0625724468B98000EDEB6 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0625624468B98000EDEB6 /* Movie.swift */; };
+		EDE0625924468C85000EDEB6 /* MoviesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0625824468C85000EDEB6 /* MoviesListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EDE06237244630FC000EDEB6 /* FlixCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlixCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE0623A244630FC000EDEB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDE0623C244630FC000EDEB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EDE0623E244630FC000EDEB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EDE0624024463103000EDEB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDE0624324463103000EDEB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EDE0624624463103000EDEB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDE0624824463103000EDEB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDE0624E2446443C000EDEB6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		EDE0625324468B06000EDEB6 /* MoviesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListView.swift; sourceTree = "<group>"; };
+		EDE0625624468B98000EDEB6 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		EDE0625824468C85000EDEB6 /* MoviesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +62,10 @@
 		EDE06239244630FC000EDEB6 /* FlixCombine */ = {
 			isa = PBXGroup;
 			children = (
-				EDE0623A244630FC000EDEB6 /* AppDelegate.swift */,
-				EDE0623C244630FC000EDEB6 /* SceneDelegate.swift */,
-				EDE0623E244630FC000EDEB6 /* ContentView.swift */,
+				EDE0625024468A68000EDEB6 /* App */,
+				EDE0625224468A94000EDEB6 /* Network */,
+				EDE0625524468B6A000EDEB6 /* Model */,
+				EDE0625124468A7A000EDEB6 /* View */,
 				EDE0624024463103000EDEB6 /* Assets.xcassets */,
 				EDE0624524463103000EDEB6 /* LaunchScreen.storyboard */,
 				EDE0624824463103000EDEB6 /* Info.plist */,
@@ -73,6 +80,41 @@
 				EDE0624324463103000EDEB6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EDE0625024468A68000EDEB6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EDE0623A244630FC000EDEB6 /* AppDelegate.swift */,
+				EDE0623C244630FC000EDEB6 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EDE0625124468A7A000EDEB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDE0625324468B06000EDEB6 /* MoviesListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDE0625224468A94000EDEB6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EDE0624E2446443C000EDEB6 /* API.swift */,
+			);
+			name = Network;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		EDE0625524468B6A000EDEB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDE0625624468B98000EDEB6 /* Movie.swift */,
+				EDE0625824468C85000EDEB6 /* MoviesListViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDE0625424468B06000EDEB6 /* MoviesListView.swift in Sources */,
 				EDE0623B244630FC000EDEB6 /* AppDelegate.swift in Sources */,
 				EDE0623D244630FC000EDEB6 /* SceneDelegate.swift in Sources */,
-				EDE0623F244630FC000EDEB6 /* ContentView.swift in Sources */,
+				EDE0625924468C85000EDEB6 /* MoviesListViewModel.swift in Sources */,
+				EDE0624F2446443C000EDEB6 /* API.swift in Sources */,
+				EDE0625724468B98000EDEB6 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
