@@ -1,5 +1,5 @@
-# Flix: MVVM + Combine + SwiftUI
-A project to explore using MVVM architecture and Combine + SwiftUI frameworks to create a simple movie browsing app with data from [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction)
+# Flix: Combine + SwiftUI + MVVM
+A project to explore using Combine + SwiftUI frameworks with MVVM architecture to create a simple movie browsing app with data from [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction)
 
 ## 1. Fetch Movies and display in List
 ### Goal
