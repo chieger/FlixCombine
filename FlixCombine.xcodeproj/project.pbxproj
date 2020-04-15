@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED376CE42447BB3E00F0EA7E /* MovieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED376CE32447BB3E00F0EA7E /* MovieRow.swift */; };
 		EDE0623B244630FC000EDEB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0623A244630FC000EDEB6 /* AppDelegate.swift */; };
 		EDE0623D244630FC000EDEB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0623C244630FC000EDEB6 /* SceneDelegate.swift */; };
 		EDE0624124463103000EDEB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE0624024463103000EDEB6 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED376CE32447BB3E00F0EA7E /* MovieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRow.swift; sourceTree = "<group>"; };
 		EDE06237244630FC000EDEB6 /* FlixCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlixCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE0623A244630FC000EDEB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDE0623C244630FC000EDEB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				EDE0625324468B06000EDEB6 /* MoviesListView.swift */,
+				ED376CE32447BB3E00F0EA7E /* MovieRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				EDE0623B244630FC000EDEB6 /* AppDelegate.swift in Sources */,
 				EDE0623D244630FC000EDEB6 /* SceneDelegate.swift in Sources */,
 				EDE0625924468C85000EDEB6 /* MoviesListViewModel.swift in Sources */,
+				ED376CE42447BB3E00F0EA7E /* MovieRow.swift in Sources */,
 				EDE0624F2446443C000EDEB6 /* API.swift in Sources */,
 				EDE0625724468B98000EDEB6 /* Movie.swift in Sources */,
 			);
