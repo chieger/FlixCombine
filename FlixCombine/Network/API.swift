@@ -76,6 +76,8 @@ struct API {
     /// A shared JSON decoder to use in calls.
     private var decoder: JSONDecoder = {
         let decoder = JSONDecoder()
+        // TheMovieDB API keys are in snake_case (ex: poster_path) while our models use camelCase keys.
+        // Add snake_case -> camelCase conversion in the decoder.
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         return decoder
     }()
