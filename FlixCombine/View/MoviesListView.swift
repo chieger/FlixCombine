@@ -11,7 +11,7 @@ import SwiftUI
 struct MoviesListView: View {
     @ObservedObject var model: MoviesListViewModel
 
-    init(model: MoviesListViewModel) {
+    init(_ model: MoviesListViewModel) {
         self.model = model
     }
 
