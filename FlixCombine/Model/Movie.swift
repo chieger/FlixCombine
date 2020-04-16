@@ -11,15 +11,16 @@ import Foundation
 struct MovieResponse: Codable {
     let page: Int
     let results: [Movie]
-    let totalPages: Int // total_pages
-    let totalResults: Int // total_results
+    let totalPages: Int
+    let totalResults: Int
 }
 
 struct Movie: Codable, Identifiable {
-    let posterPath: String? // poster_path
+    let posterPath: String?
     let overview: String
-    let releaseDate: String // How to auto convert to date? release_date
+    let releaseDate: String
     let id: Int
     let title: String
-    let voteAverage: Double // vote_average
+    let voteAverage: Double
+    let backdropPath: String?
 }
