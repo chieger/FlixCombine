@@ -5,9 +5,13 @@ A project to explore using Combine + SwiftUI frameworks with MVVM architecture t
 
 ## Jump to...
 1. [Fetch Movies and display titles in List](https://github.com/chieger/FlixCombine#1-fetch-movies-and-display-titles-in-list)
+   - [Branch with project in this state](https://github.com/chieger/FlixCombine/tree/feature/fetch-and-display-movies-list-v1.1)
 1. [Create custom view for Movie Row in List](https://github.com/chieger/FlixCombine#2-create-custom-view-for-movie-row-in-list)
+   - [Branch...](https://github.com/chieger/FlixCombine/tree/feature/create-custom-view-list-row-v1.2)
 1. [Display movie poster images](https://github.com/chieger/FlixCombine#3-display-movie-poster-images)
+   - [Branch...](https://github.com/chieger/FlixCombine/tree/feature/async-image-fetching-v1.3)
 1. [Create Movie Detail View](https://github.com/chieger/FlixCombine#4-create-movie-detail-view)
+   - [Branch...](https://github.com/chieger/FlixCombine/tree/feature/detail-view-basic-v1.4)
 
 ## 1. Fetch Movies and display titles in List
 ### Goal
