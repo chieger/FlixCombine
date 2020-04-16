@@ -38,4 +38,21 @@ Create a custom SwiftUI view to encapsulate a placeholder image, movie title and
 ### Images
 ![flix_1 2](https://user-images.githubusercontent.com/11927517/79396200-3609ef80-7f30-11ea-88bf-7f6abb9cf08c.gif)
 
+## 3. Display movie poster images
+### Goal
+Fetch movie poster images asynchronously and display in movie rows.
 
+### Steps
+1. Create ImageLoader class.
+   1. Observable Object with `@Published` image property.
+1. Create Custom AsyncImage view that utilizes ImageLoader.
+   1. Add property for ImageLoader with `ObservedObject` wrapper to observe when image updates.
+   1. Takes an optional Placeholder of type `View`. This allows the caller to pass in any view for placeholder, for instance placeholder could be Text vs. Image.
+1. Update API with Endpoint to fetch images.
+   1. Image fetching url has different `host` as well as `path`.
+1. Create MovieRowViewModel initialized my a movie object.
+   1. Add computed property for image url.
+   1. Update MovieListView to initialize MovieRow with in MovieRowViewModel.
+
+### Images
+![flix_1 3](https://user-images.githubusercontent.com/11927517/79494526-031b3680-7fd8-11ea-813b-eea89e7c7930.gif)
