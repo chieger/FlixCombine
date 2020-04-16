@@ -1,6 +1,12 @@
 # Flix: Combine + SwiftUI + MVVM
 A project to explore using Combine + SwiftUI frameworks with MVVM architecture to create a simple movie browsing app with data from [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction)
 
+## Jump to...
+1. [Fetch Movies and display titles in List](https://github.com/chieger/FlixCombine#1-fetch-movies-and-display-titles-in-list)
+1. [Create custom view for Movie Row in List](https://github.com/chieger/FlixCombine#2-create-custom-view-for-movie-row-in-list)
+1. [Display movie poster images](https://github.com/chieger/FlixCombine#3-display-movie-poster-images)
+1. [Create Movie Detail View](https://github.com/chieger/FlixCombine#4-create-movie-detail-view)
+
 ## 1. Fetch Movies and display titles in List
 ### Goal
 Fetch a list of movie's now playing from [The Movie Database API - Now Playing Endpoint](https://developers.themoviedb.org/3/movies/get-now-playing) and display them in a SwiftUI list view.
