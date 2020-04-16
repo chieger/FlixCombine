@@ -21,7 +21,11 @@ struct MoviesListView: View {
             List {
                 Section(header: Text("Now Playing")) {
                     ForEach(self.model.movies) { movie in
-                        MovieRow(MovieRowViewModel(movie))
+                        NavigationLink(
+                            destination: MovieDetailView(MovieDetailViewModel(movie)),
+                            label: {
+                                MovieRow(MovieRowViewModel(movie))
+                        })
                     }
                 }
             }
