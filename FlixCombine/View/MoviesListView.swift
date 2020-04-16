@@ -34,7 +34,7 @@ struct MoviesListView: View {
 #if DEBUG
 struct MoviesListView_Previews: PreviewProvider {
     static var previews: some View {
-        MoviesListView(model: MoviesListViewModel())
+        MoviesListView(MoviesListViewModel())
     }
 }
 #endif
