@@ -11,7 +11,7 @@ import SwiftUI
 struct MoviesListView: View {
     @ObservedObject var model: MoviesListViewModel
 
-    init(model: MoviesListViewModel) {
+    init(_ model: MoviesListViewModel) {
         self.model = model
     }
 
@@ -21,8 +21,7 @@ struct MoviesListView: View {
             List {
                 Section(header: Text("Now Playing")) {
                     ForEach(self.model.movies) { movie in
-                        MovieRow(title: movie.title,
-                                 overview: movie.overview)
+                        MovieRow(MovieRowViewModel(movie))
                     }
                 }
             }
@@ -34,7 +33,7 @@ struct MoviesListView: View {
 #if DEBUG
 struct MoviesListView_Previews: PreviewProvider {
     static var previews: some View {
-        MoviesListView(model: MoviesListViewModel())
+        MoviesListView(MoviesListViewModel())
     }
 }
 #endif

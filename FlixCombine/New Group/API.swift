@@ -28,10 +28,16 @@ struct API {
     enum EndPoint {
 
         case nowPlaying
+        case image(String)
 
         /// Query parameters needed for authentication, in this case, the api key.
         private var authenticationQueryParameters: [String: String?]? {
-            return ["api_key": "3fc4c235756257eca55e964b82f1a1a6"]
+            switch self {
+            case .nowPlaying:
+                return ["api_key": "3fc4c235756257eca55e964b82f1a1a6"]
+            case .image:
+                return nil
+            }
         }
 
         /// The path for the specified endpoint.
@@ -39,6 +45,18 @@ struct API {
             switch self {
             case .nowPlaying:
                 return "/3/movie/now_playing"
+            case .image(let url):
+                return "/t/p/w300" + url
+            }
+        }
+
+        /// The host for the specified endpoint. Images have a different host than fetching movies.
+        private var host: String {
+            switch self {
+            case .image:
+                return "image.tmdb.org"
+            default:
+                return "api.themoviedb.org"
             }
         }
 
@@ -46,7 +64,7 @@ struct API {
         var url: URL {
             var components = URLComponents()
             components.scheme = "https"
-            components.host = "api.themoviedb.org"
+            components.host = host
             components.path = path
             components.addQueryItems(with: authenticationQueryParameters)
             let url = components.url!
