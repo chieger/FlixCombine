@@ -56,3 +56,15 @@ Fetch movie poster images asynchronously and display in movie rows.
 
 ### Images
 ![flix_1 3](https://user-images.githubusercontent.com/11927517/79494526-031b3680-7fd8-11ea-813b-eea89e7c7930.gif)
+
+## 4. Create Movie Detail View
+### Goal
+A user can tap on a Movie row to navigate to a Movie Detail view. User can tap the "back" button in the nav bar on the detail screen to return to the Movies List view.
+
+### Steps
+1. Add backdropPath to Movie Model
+1. Create MovieDetailView and MovieDetailViewModel
+1. Embed MovieRow NavigationLink
+
+### Images
+![flix_1 4](https://user-images.githubusercontent.com/11927517/79503828-ad9a5600-7fe6-11ea-8d07-3df4f078d30b.gif)
